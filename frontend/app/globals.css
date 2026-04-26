@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+* {
+  @apply border-slate-200 dark:border-slate-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+.markdown-content {
+  @apply max-w-none text-sm leading-6 text-slate-700 dark:text-slate-200;
+}
+
+.markdown-content p + p {
+  @apply mt-3;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  @apply my-3 ml-5;
+}
+
+.markdown-content ul {
+  @apply list-disc;
+}
+
+.markdown-content ol {
+  @apply list-decimal;
+}
+
+.markdown-content li + li {
+  @apply mt-1;
+}
+
+.markdown-content a {
+  @apply text-brand-600 underline decoration-brand-400 underline-offset-2;
+}
+
+.markdown-content strong {
+  @apply font-semibold text-slate-900 dark:text-slate-100;
+}
