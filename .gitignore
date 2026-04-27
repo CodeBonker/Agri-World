@@ -1,0 +1,74 @@
+# ─── Environment & secrets ───────────────────────────────────────────────────
+.env
+*.env
+.env.*
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ─── Virtual environment ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── ML Models (large files) ─────────────────────────────────────────────────
+# crop_model.pkl is 2.8GB — too large for GitHub
+models/crop_model.pkl
+
+# Keep these — they are small enough (<10MB each)
+# models/fertilizer_model.pkl     ← 1.3MB  ✅ included
+# models/fertilizer_full.pkl      ← 1.3MB  ✅ included
+# models/encoders.pkl             ← 4KB    ✅ included
+# models/feature_names.pkl        ← 4KB    ✅ included
+# models/disease_model.pth        ← 9.3MB  ✅ included
+
+# ─── Temporary uploads ───────────────────────────────────────────────────────
+temp_uploads/
+*.tmp
+
+# ─── OS files ────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Jupyter ─────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── Test artifacts ──────────────────────────────────────────────────────────
+assets/test_healthy.jpg
+assets/test_diseased.jpg
+assets/test_leaf.jpg
